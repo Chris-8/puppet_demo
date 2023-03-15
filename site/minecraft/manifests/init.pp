@@ -11,7 +11,7 @@ class minecraft {
     name     => 'packages-microsoft-com-prod',
     enabled   => 1,
     gpgcheck  => 1,
-    gpgkey    => 'https://packages.microsoft.com/keys/microsoft.asc'
+    gpgkey    => 'https://packages.microsoft.com/keys/microsoft.asc',
     sslverify => 1,
   }
   package { 'msopenjdk-17':
