@@ -1,6 +1,8 @@
-class minecraft {
-  $mincraft_jar_url = 'https://piston-data.mojang.com/v1/objects/8f3112a1049751cc472ec13e397eade5336ca7ae/server.jar'
+class minecraft (
+  $mincraft_jar_url = 'https://piston-data.mojang.com/v1/objects/8f3112a1049751cc472ec13e397eade5336ca7ae/server.jar',
   $install_dir = '/opt/minecraft'
+)
+{
   yumrepo { 'packages-microsoft-com-prod':
     baseurl   => 'https://packages.microsoft.com/centos/7/prod',
     name     => 'packages-microsoft-com-prod',
