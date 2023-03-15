@@ -29,7 +29,7 @@ class minecraft {
   }
   service { 'minecraft':
     ensure  => running,
-    enable  => true
-    require => [Package['msopenjdk-17'],File['/opt/minecraft/eula.txt'],File['/etc/systemd/system/minecraft.service']]
+    enable  => true,
+    require => [Package['msopenjdk-17'],File['/opt/minecraft/eula.txt'],File['/etc/systemd/system/minecraft.service']],
   }
 }
