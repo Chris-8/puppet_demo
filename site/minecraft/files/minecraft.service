@@ -1,4 +1,4 @@
-[unit]
+[Unit]
 Description=Minecraft Server
 
 Wants=network.target
